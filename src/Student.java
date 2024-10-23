@@ -1,7 +1,13 @@
-public class Student {
-    //person hs
+public class Student extends Person {
     private String lop;
     private String studentID;
+
+    public Student(String name, String address, String phone, String id, String email, String lop, String studentID) {
+        super(name, address, phone, id, email);
+        setLop(lop);
+        setStudentID(studentID);
+    }
+    
     public void setLop(String lop){
         this.lop = lop;
     }
